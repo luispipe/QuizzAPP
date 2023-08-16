@@ -37,7 +37,7 @@
         android:textAlignment="center"
         android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintBottom_toTopOf="@+id/textViewQuestionTwo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
@@ -49,9 +49,9 @@
         android:layout_width="340dp"
         android:layout_height="145dp"
         android:layout_marginTop="20dp"
-        android:text="¿Cuales son los dos lenguajes de programación que Android Studio permiten para  el desarrollo de aplicaciones moviles para Sistema Operativo Android?"
+        android:text="¿Android Studio requiere de dos plugins para funcionar correctamente, indique cuáles son?"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/checkBox"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxQ2Op1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
@@ -60,12 +60,12 @@
 
     <CheckBox
         android:id="@+id/checkBoxQ2Op1"
-        android:layout_width="338dp"
+        android:layout_width="340dp"
         android:layout_height="50dp"
         android:layout_marginTop="28dp"
-        android:text="Python"
+        android:text="APK"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/checkBox2"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxQ2Op2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
@@ -73,9 +73,9 @@
 
     <CheckBox
         android:id="@+id/checkBoxQ2Op2"
-        android:layout_width="338dp"
+        android:layout_width="340dp"
         android:layout_height="50dp"
-        android:text="Java"
+        android:text="JDK"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/checkBoxQ2Op3"
         app:layout_constraintEnd_toEndOf="parent"
@@ -85,9 +85,9 @@
 
     <CheckBox
         android:id="@+id/checkBoxQ2Op3"
-        android:layout_width="338dp"
+        android:layout_width="340dp"
         android:layout_height="50dp"
-        android:text="JavaScript"
+        android:text="SDK"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/checkBoxQ2Op4"
         app:layout_constraintEnd_toEndOf="parent"
@@ -97,9 +97,9 @@
 
     <CheckBox
         android:id="@+id/checkBoxQ2Op4"
-        android:layout_width="338dp"
+        android:layout_width="340dp"
         android:layout_height="50dp"
-        android:text="Kotlin"
+        android:text="JRE"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/buttonQ2Next"
         app:layout_constraintEnd_toEndOf="parent"
@@ -112,7 +112,7 @@
         android:layout_width="213dp"
         android:layout_height="51dp"
         android:backgroundTint="#69B0D0"
-        android:text="Siguiente"
+        android:text="Validar"
         android:textColor="#030303"
         android:textSize="20sp"
         app:cornerRadius="10dp"
@@ -121,4 +121,5 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkBoxQ2Op4" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

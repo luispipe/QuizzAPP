@@ -108,7 +108,7 @@
         android:layout_width="213dp"
         android:layout_height="51dp"
         android:backgroundTint="#69B0D0"
-        android:text="Siguiente"
+        android:text="Validar"
         android:textColor="#030303"
         android:textSize="20sp"
         app:cornerRadius="10dp"
