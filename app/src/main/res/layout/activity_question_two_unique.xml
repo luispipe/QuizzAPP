@@ -57,7 +57,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tvQuestionUniqueTwo"
         app:layout_constraintVertical_bias="0.081" />
 
-    <CheckBox
+    <RadioButton
         android:id="@+id/rBtnQ2Op1"
         android:layout_width="340dp"
         android:layout_height="50dp"
@@ -70,7 +70,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvQuestionTwoText" />
 
-    <CheckBox
+    <RadioButton
         android:id="@+id/rBtnQ2Opt2"
         android:layout_width="340dp"
         android:layout_height="50dp"
@@ -82,7 +82,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rBtnQ2Op1" />
 
-    <CheckBox
+    <RadioButton
         android:id="@+id/rBtnQ2Opt3"
         android:layout_width="340dp"
         android:layout_height="50dp"
@@ -94,7 +94,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rBtnQ2Opt2" />
 
-    <CheckBox
+    <RadioButton
         android:id="@+id/rBtnQ2Opt4"
         android:layout_width="340dp"
         android:layout_height="50dp"

@@ -45,7 +45,7 @@
     <TextView
         android:id="@+id/textView3"
         android:layout_width="340dp"
-        android:layout_height="145dp"
+        android:layout_height="wrap_content"
         android:text="¿Cuales son los dos lenguajes de programación que Android Studio permiten para  el desarrollo de aplicaciones moviles para Sistema Operativo Android?"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/checkBox"

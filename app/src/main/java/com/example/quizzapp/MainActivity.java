@@ -16,12 +16,22 @@ public class MainActivity extends AppCompatActivity {
 
         Button multiple= findViewById(R.id.button2);
 
+        Button unica= findViewById(R.id.button);
+
         Intent question1= new Intent(getApplicationContext(), QuestionOneMultipleActivity.class);
 
+        Intent questionU1= new Intent(getApplicationContext(), QuestionOneUniqueActivity.class);
         multiple.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(question1);
+            }
+        });
+
+        unica.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(questionU1);
             }
         });
 

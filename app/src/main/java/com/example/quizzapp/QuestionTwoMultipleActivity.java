@@ -3,6 +3,7 @@ package com.example.quizzapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -32,6 +33,9 @@ public class QuestionTwoMultipleActivity extends AppCompatActivity {
                 && !option1.isChecked() && !option4.isChecked()){
                     Toast.makeText(getApplicationContext(),"Respuesta Correcta",Toast.LENGTH_LONG).show();
                 }else {
+                    option2.setBackgroundColor(Color.GREEN);
+                    option3.setBackgroundColor(Color.GREEN);
+
                     Toast.makeText(getApplicationContext(),"Respuesta Incorrecta",Toast.LENGTH_LONG).show();
                 }
 

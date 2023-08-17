@@ -35,37 +35,32 @@
         android:textAlignment="center"
         android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textViewQuestionTwo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.063" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
         android:id="@+id/textViewQuestionTwo"
         android:layout_width="340dp"
-        android:layout_height="145dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="¿Android Studio requiere de dos plugins para funcionar correctamente, indique cuáles son?"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/checkBoxQ2Op1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion2"
-        app:layout_constraintVertical_bias="0.081" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion2" />
 
     <CheckBox
         android:id="@+id/checkBoxQ2Op1"
         android:layout_width="340dp"
         android:layout_height="50dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="20dp"
         android:text="APK"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/checkBoxQ2Op2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewQuestionTwo" />
 
@@ -73,11 +68,11 @@
         android:id="@+id/checkBoxQ2Op2"
         android:layout_width="340dp"
         android:layout_height="50dp"
+        android:layout_marginTop="20dp"
         android:text="JDK"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/checkBoxQ2Op3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkBoxQ2Op1" />
 
@@ -85,11 +80,11 @@
         android:id="@+id/checkBoxQ2Op3"
         android:layout_width="340dp"
         android:layout_height="50dp"
+        android:layout_marginTop="20dp"
         android:text="SDK"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/checkBoxQ2Op4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkBoxQ2Op2" />
 
@@ -97,11 +92,11 @@
         android:id="@+id/checkBoxQ2Op4"
         android:layout_width="340dp"
         android:layout_height="50dp"
+        android:layout_marginTop="20dp"
         android:text="JRE"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonQ2Next"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.563"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkBoxQ2Op3" />
 
@@ -116,8 +111,8 @@
         app:cornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBoxQ2Op4" />
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxQ2Op4"
+        app:layout_constraintVertical_bias="0.352" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
