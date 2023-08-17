@@ -2,6 +2,7 @@ package com.example.quizzapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -23,6 +24,11 @@ public class QuestionOneMultipleActivity extends AppCompatActivity {
 
         Button validate= findViewById(R.id.button3);
 
+        //Siempre utilizan una intención para ir a otra vista, layout, interfaz
+        //El contexto es el lugar, actividad , vista donde estamos
+        // para obtener el contexto usamos un getApplicationContext() o un getBaseContext()
+        Intent algo= new Intent(getApplicationContext(),QuestionTwoMultipleActivity.class);
+
         validate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -33,10 +39,14 @@ public class QuestionOneMultipleActivity extends AppCompatActivity {
                 // que es verdadero = falso
                 if(option2.isChecked() && option4.isChecked() &&
                     !option1.isChecked() && !option3.isChecked()){
-                    Toast.makeText(getApplicationContext(),"La respuesta es correcta",Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(),
+                            "La respuesta es correcta",Toast.LENGTH_LONG).show();
                 }else{
-                    Toast.makeText(getApplicationContext(),"La respuesta es incorrecta",Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(),
+                            "La respuesta es incorrecta",Toast.LENGTH_LONG).show();
                 }
+
+                startActivity(algo);
 
             }
         });

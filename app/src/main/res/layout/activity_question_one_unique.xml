@@ -4,6 +4,114 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#D9EDF6"
     tools:context=".QuestionOneUniqueActivity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#C8F5CA"
+        android:text="Quizz Única"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvQuestionUniqueOne"
+        app:layout_constraintEnd_toEndOf="@+id/tvQuestionUniqueOne"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="@+id/tvQuestionUniqueOne"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvQuestionUniqueOne"
+        android:layout_width="250dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="20dp"
+        android:text="Pregunta 1"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvtextViewQuestionUniqueOneText"
+        app:layout_constraintEnd_toEndOf="@+id/tvtextViewQuestionUniqueOneText"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/tvtextViewQuestionUniqueOneText"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/tvtextViewQuestionUniqueOneText"
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="28dp"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvQuestionUniqueOne" />
+
+    <RadioButton
+        android:id="@+id/rBtnQ1Opt1"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Respuesta 1"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/rBtnQ1Opt2"
+        app:layout_constraintEnd_toEndOf="@+id/rBtnQ1Opt2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/rBtnQ1Opt2"
+        app:layout_constraintTop_toBottomOf="@+id/tvtextViewQuestionUniqueOneText" />
+
+    <RadioButton
+        android:id="@+id/rBtnQ1Opt2"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Respuesta 2"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/rBtnQ1Opt3"
+        app:layout_constraintEnd_toEndOf="@+id/rBtnQ1Opt3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/rBtnQ1Opt3"
+        app:layout_constraintTop_toBottomOf="@+id/rBtnQ1Opt1" />
+
+    <RadioButton
+        android:id="@+id/rBtnQ1Opt3"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Respuesta 3"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/rBtnQ1Opt4"
+        app:layout_constraintEnd_toEndOf="@+id/rBtnQ1Opt4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/rBtnQ1Opt4"
+        app:layout_constraintTop_toBottomOf="@+id/rBtnQ1Opt2" />
+
+    <RadioButton
+        android:id="@+id/rBtnQ1Opt4"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Respuesta 4"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnQuestionUOne"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/btnQuestionUOne"
+        app:layout_constraintTop_toBottomOf="@+id/rBtnQ1Opt3" />
+
+    <Button
+        android:id="@+id/btnQuestionUOne"
+        android:layout_width="213dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#69B0D0"
+        android:text="Validar"
+        android:textSize="20sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rBtnQ1Opt4"
+        app:layout_constraintVertical_bias="0.256" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
